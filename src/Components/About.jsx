@@ -24,7 +24,7 @@ const imageAltText = "pink colored reflections in water";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "I'm a web developer and IT consultant. I solve problems and am a friendly human while I'm at it. Try speaking to me in Spanish!";
 
 /**
  * List of some of skills or technologies you work on, are learning,
@@ -32,11 +32,11 @@ const description =
  */
 const skillsList = [
   "Web design",
-  "User experience",
+  "Responsive design",
   "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "IT consulting",
+  "Streamlining workflows",
+  "App development",
 ];
 
 /**
@@ -45,7 +45,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "Contact me about building a website for you or your business, streamlining your small business workflow with APIs, or if you are looking to add to your team. I'm eager to work on app development with a professional team. Check out some of my work below!";
 
 const About = () => {
   return (
