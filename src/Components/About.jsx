@@ -10,13 +10,15 @@ import React from "react";
  * About background image
  *
  * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
+ * directory and import here for use. Then, set imageAltText to string that
  * represents what you see in that image.
  *
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
  */
 import image from "../images/background.jpg";
+
+import profilePic from "../images/profile-pic.png";
 
 const imageAltText = "pink colored reflections in water";
 
@@ -50,7 +52,7 @@ const detailOrQuote =
 const About = () => {
   return (
     <section className="padding" id="about">
-      <img className="background" src={image} alt={imageAltText} />
+      <img className="background" src={image} alt={imageAltText} style={{ opacity: "0.75" }} />
       <div
         style={{
           backgroundColor: "white",
@@ -60,6 +62,7 @@ const About = () => {
           textAlign: "center",
         }}
       >
+        <img src="{profilePic}" alt="portrait of the programmer" />
         <h2>About Myself</h2>
         <p className="large">{description}</p>
         <hr />

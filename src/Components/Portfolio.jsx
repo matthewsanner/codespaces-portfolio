@@ -31,28 +31,31 @@ const imageAltText = "a person looking up at colorful milky way galaxy in nights
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Flashy",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "A flashcard app to help students study definitions, vocabulary, concepts, etc. Has full back-end CRUD, authentication, authorization, sessions, and web security.",
+    url: "https://flashy-vgut.onrender.com/",
+    codeUrl: "https://github.com/matthewsanner/flashcard-app",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Bones CMS",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Currently under development! A stripped down content management system for blogging. Uses a separate React frontend and Node/Express backend. Note: backend has to spin up separately so expect delayed functionality in demo.",
+    url: "https://bones-cms-react.onrender.com/",
+    frontendUrl: "https://github.com/matthewsanner/bones-cms-react",
+    backendUrl: "https://github.com/matthewsanner/bones-cms-backend",
   },
   {
-    title: "My Resume Site",
+    title: "Verdant Mental Health",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Designed this professional, responsive website for a mental health clinic. Functionality and style fit to client's expectations and specifications. Uses SEO and accessibility best practices, complex CSS and Javascript, a logo, and optimized images for fast loading on different screen sizes.",
+    url: "https://verdantmentalhealth.com/",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Circosphere",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Streamlined workflow by connecting various third-party services with Google Workspace APIs (Calendar, Drive, Docs). Created a custom Gmail add-on. Results include increased efficiency, improved internal and external communication, and better lead generation and conversion.",
+    url: "https://circosphere.com/",
   },
 ];
 
@@ -74,7 +77,47 @@ const Portfolio = () => {
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
               </a>
-              <p className="small">{project.description}</p>
+              <p className="small" style={{ marginBottom: "8px" }}>
+                {project.description}
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                {project.codeUrl ? (
+                  <a
+                    href={project.codeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button"
+                  >
+                    Code
+                  </a>
+                ) : null}
+                {project.backendUrl ? (
+                  <a
+                    href={project.backendUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button"
+                  >
+                    Backend Code
+                  </a>
+                ) : null}
+                {project.frontendUrl ? (
+                  <a
+                    href={project.frontendUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button"
+                  >
+                    Frontend Code
+                  </a>
+                ) : null}
+              </div>
             </div>
           ))}
         </div>
