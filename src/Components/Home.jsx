@@ -13,7 +13,7 @@ import PropTypes from "prop-types";
  * Home background image
  *
  * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
+ * directory and import here for use. Then, set imageAltText to string that
  * represents what you see in that image.
  *
  *
@@ -22,7 +22,8 @@ import PropTypes from "prop-types";
  */
 import image from "../images/programming.jpg";
 
-const imageAltText = "someone programming on a laptop with pink flowers on the ground in front of them";
+const imageAltText =
+  "someone programming on a laptop with pink flowers on the ground in front of them";
 
 const Home = ({ name, title }) => {
   return (

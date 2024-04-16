@@ -5,8 +5,11 @@
  * user scrolls so that they can constantly reach any part of your page.
  */
 import React from "react";
+import PropTypes from "prop-types";
 
-const Header = () => {
+const Header = (props) => {
+  const { primaryColor } = props;
+
   return (
     <div
       id="header"
@@ -15,7 +18,7 @@ const Header = () => {
         display: "flex",
         justifyContent: "center",
         gap: "2rem",
-        background: "rgb(0,0,0)",
+        background: primaryColor,
         padding: "1rem",
         top: 0,
         width: "100%",
@@ -28,6 +31,10 @@ const Header = () => {
       <a href="#footer">Contact</a>
     </div>
   );
+};
+
+Header.propTypes = {
+  primaryColor: PropTypes.string,
 };
 
 export default Header;

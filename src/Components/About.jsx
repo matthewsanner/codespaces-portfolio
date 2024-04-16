@@ -62,7 +62,7 @@ const About = () => {
           textAlign: "center",
         }}
       >
-        <img src="{profilePic}" alt="portrait of the programmer" />
+        <img src={profilePic} alt="portrait of the programmer" style={{ width: "43%" }} />
         <h2>About Myself</h2>
         <p className="large">{description}</p>
         <hr />
